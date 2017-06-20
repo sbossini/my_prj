@@ -1,3 +1,6 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,63 +12,56 @@
 <!-- PAGE TITLE -->
 <title>CLEAN - SLIDER RESPONSIVE HTML TEMPLATE</title>
 
+<spring:url value ="/resources/theme1/css/" var="css" />
+<spring:url value="/resources/theme1/js/" var="js" />
+<spring:url value="/resources/theme1/images/" var="img" />
 <!-- ===================================
         FAVICON ICON
     ==================================== -->
-<link rel="shortcut icon" href="src/main/resources/images/favicon.ico">
+<%-- <link rel="shortcut icon" href="${css }images/favicon.ico"> --%>
 
 <!-- ===================================
         NORMALIZE CSS
     ==================================== -->
-<link rel="stylesheet" href="src/main/resources/css/normalize.css">
+<link rel="stylesheet" href="${css }normalize.css">
 
 <!-- ===================================
         BOOTSTRAP 
     ==================================== -->
-<link rel="stylesheet" href="src/main/resources/css/bootstrap.min.css">
+<link rel="stylesheet" href="${css }bootstrap.min.css">
 
 <!-- ===================================
         GOOGLE FONTS
     ==================================== -->
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700'
+<link href=<c:url value='http://fonts.googleapis.com/css?family=Montserrat:400,700' />
 	rel='stylesheet' type='text/css'>
 <link
-	href='http://fonts.googleapis.com/css?family=Raleway:600,700,400,300'
+	href=<c:url value='http://fonts.googleapis.com/css?family=Raleway:600,700,400,300' />
 	rel='stylesheet' type='text/css'>
 
 <!-- ===================================
         FONTS ICON
     ==================================== -->
-<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="${css }font-awesome/css/font-awesome.css">
 
 <!-- ===================================
         PLUGIN
     ==================================== -->
-<link rel="stylesheet" href="src/main/resources/css/magnific-popup.css">
-<link rel="stylesheet" href="src/main/resources/css/slider-pro.css">
-<link rel="stylesheet" href="src/main/resources/css/owl.carousel.css">
-<link rel="stylesheet" href="src/main/resources/css/owl.theme.css">
-<link rel="stylesheet" href="src/main/resources/css/owl.transitions.css">
-<link rel="stylesheet" href="src/main/resources/css/animate.css">
+<link rel="stylesheet" href="${css }magnific-popup.css">
+<link rel="stylesheet" href="${css }slider-pro.css">
+<link rel="stylesheet" href="${css }owl.carousel.css">
+<link rel="stylesheet" href="${css }owl.theme.css">
+<link rel="stylesheet" href="${css }owl.transitions.css">
+<link rel="stylesheet" href="${css }animate.css">
 
 <!-- ===================================
         MAIN STYLESHEET
     ==================================== -->
-<link rel="stylesheet" href="src/main/resources/css/main.css">
-<link rel="stylesheet" href="src/main/resources/css/responsive.css" />
-<link rel="stylesheet" href="src/main/resources/css/color-green.css"
-	id="colors" />
+<link rel="stylesheet" href="${css }main.css" >
+<link rel="stylesheet" href="${css }responsive.css" >
+<link rel="stylesheet" href="${css }color-green.css"
+	id="colors" >
 
-
-
-<!--[if lt IE 9]>
-        <script src="js/html5shiv.min.js"></script>
-        <script src="js/respond.min.js"></script>
-        <script type="text/javascript" src="js/selectivizr-min.js"></script>
-        <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
-		<script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
-        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-	<![endif]-->
 </head>
 
 <body>
@@ -93,8 +89,8 @@
 					</button>
 
 					<!-- Logo -->
-					<a class="navbar-brand" href="index.html"><img class="logo"
-						id="logo" src="src/main/resources/images/logo.png" alt="Page"></a>
+					<a class="navbar-brand" href="SecondPage.html"><img class="logo"
+						id="logo" src="${img }logo.png" alt="Page"></a>
 
 				</div>
 				<!-- Navbar Toggle End -->
@@ -130,7 +126,7 @@
 			<div class="sp-slide clean-main-slides">
 				<div class="clean-img-overlay"></div>
 
-				<img class="sp-image" src="src/main/resources/images/slider/1.jpg"
+				<img class="sp-image" src="${img }slider/1.jpg"
 					alt="Slider 1" />
 
 				<h1 class="sp-layer clean-slider-text-big" data-position="center"
@@ -150,7 +146,7 @@
 			<!-- Slides -->
 			<div class="sp-slide clean-main-slides">
 				<div class="clean-img-overlay"></div>
-				<img class="sp-image" src="src/main/resources/images/slider/2.jpg"
+				<img class="sp-image" src="${img }slider/2.jpg"
 					alt="Slider 2" />
 
 				<h1 class="sp-layer clean-slider-text-big" data-position="center"
@@ -171,7 +167,7 @@
 			<div class="sp-slide clean-main-slides">
 				<div class="clean-img-overlay"></div>
 
-				<img class="sp-image" src="src/main/resources/images/slider/3.jpg"
+				<img class="sp-image" src="${img }slider/3.jpg"
 					alt="Slider 3" />
 
 				<h1 class="sp-layer clean-slider-text-big" data-position="center"
@@ -298,7 +294,7 @@
 
 				<div
 					class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-img wow bounceInLeft">
-					<img src="src/main/resources/images/custom.jpg" alt="Custom Image">
+					<img src="${img }custom.jpg" alt="Custom Image">
 				</div>
 
 				<div
@@ -368,11 +364,11 @@
 						<!-- Work 1 -->
 						<div class="clean-portfolio-work-item">
 
-							<img src="src/main/resources/images/featured-work/1.png" alt="Feature Work 1">
+							<img src="${img }featured-work/1.png" alt="Feature Work 1">
 							<div class="clean-port-work-details">
 								<ul class="clean-work-meta">
 									<li class="clean-lighbox"><a
-										href="src/main/resources/images/featured-work/1.png"
+										href="${img }featured-work/1.png"
 										class="clean-featured-work-img"><i class="fa fa-cog"></i></a></li>
 								</ul>
 							</div>
@@ -383,11 +379,11 @@
 						<!-- Work 2 -->
 						<div class="clean-portfolio-work-item">
 
-							<img src="src/main/resources/images/featured-work/2.png" alt="Feature Work 2">
+							<img src="${img }featured-work/2.png" alt="Feature Work 2">
 							<div class="clean-port-work-details">
 								<ul class="clean-work-meta">
 									<li class="clean-lighbox"><a
-										href="src/main/resources/images/featured-work/2.png"
+										href="${img }featured-work/2.png"
 										class="clean-featured-work-img"><i class="fa fa-cog"></i></a></li>
 								</ul>
 							</div>
@@ -398,11 +394,11 @@
 						<!-- Work 3 -->
 						<div class="clean-portfolio-work-item">
 
-							<img src="src/main/resources/images/featured-work/3.png" alt="Feature Work 3">
+							<img src="${img }featured-work/3.png" alt="Feature Work 3">
 							<div class="clean-port-work-details">
 								<ul class="clean-work-meta">
 									<li class="clean-lighbox"><a
-										href="src/main/resources/images/featured-work/3.png"
+										href="${img }featured-work/3.png"
 										class="clean-featured-work-img"><i class="fa fa-cog"></i></a></li>
 								</ul>
 							</div>
@@ -413,11 +409,11 @@
 						<!-- Work 4 -->
 						<div class="clean-portfolio-work-item">
 
-							<img src="src/main/resources/images/featured-work/4.png" alt="Feature Work 4">
+							<img src="${img }featured-work/4.png" alt="Feature Work 4">
 							<div class="clean-port-work-details">
 								<ul class="clean-work-meta">
 									<li class="clean-lighbox"><a
-										href="src/main/resources/images/featured-work/4.png"
+										href="${img }featured-work/4.png"
 										class="clean-featured-work-img"><i class="fa fa-cog"></i></a></li>
 								</ul>
 							</div>
@@ -443,11 +439,11 @@
 						<!-- Work 6 -->
 						<div class="clean-portfolio-work-item">
 
-							<img src="src/main/resources/images/featured-work/6.png" alt="Feature Work 6">
+							<img src="${img }featured-work/6.png" alt="Feature Work 6">
 							<div class="clean-port-work-details">
 								<ul class="clean-work-meta">
 									<li class="clean-lighbox"><a
-										href="src/main/resources/images/featured-work/6.png"
+										href="${img }featured-work/6.png"
 										class="clean-featured-work-img"><i class="fa fa-cog"></i></a></li>
 								</ul>
 							</div>
@@ -458,11 +454,11 @@
 						<!-- Work 7 -->
 						<div class="clean-portfolio-work-item">
 
-							<img src="src/main/resources/images/featured-work/7.png" alt="Feature Work 7">
+							<img src="${img }featured-work/7.png" alt="Feature Work 7">
 							<div class="clean-port-work-details">
 								<ul class="clean-work-meta">
 									<li class="clean-lighbox"><a
-										href="src/main/resources/images/featured-work/7.png"
+										href="${img }featured-work/7.png"
 										class="clean-featured-work-img"><i class="fa fa-cog"></i></a></li>
 								</ul>
 							</div>
@@ -718,7 +714,7 @@
 						<div
 							class="clean-testimonial-slides col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
 							<div class="clean-member-img-wrapper">
-								<img src="src/main/resources/images/testimonial/1.png" alt="Team Member 2">
+								<img src="${img }testimonial/1.png" alt="Team Member 2">
 							</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								Possimus mollitia, dolorem eos nisi totam perspiciatis debitis
@@ -732,7 +728,7 @@
 						<div
 							class="clean-testimonial-slides col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
 							<div class="clean-member-img-wrapper">
-								<img src="src/main/resources/images/testimonial/2.png"
+								<img src="${img }testimonial/2.png"
 									alt="Team Member 2">
 							</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -747,7 +743,7 @@
 						<div
 							class="clean-testimonial-slides col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
 							<div class="clean-member-img-wrapper">
-								<img src="src/main/resources/images/testimonial/3.png" alt="Team Member 2">
+								<img src="${img }testimonial/3.png" alt="Team Member 2">
 							</div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 								Similique, aut blanditiis. Commodi iste, dignissimos laboriosam
@@ -836,7 +832,7 @@
 
 					<div class="clean-footer-logo wow bounceIn" data-wow-offset="0">
 						<a href="index.html"> <img id="logo-footer"
-							src="src/main/resources/images/logo.png" alt="clean">
+							src="${img }logo.png" alt="clean">
 						</a>
 					</div>
 
@@ -860,22 +856,22 @@
 	<!-- ===================================
         SCRIPTS
     ==================================== -->
-	<script src="src/main/resources/js/modernizr.min.js"></script>
-	<script src="src/main/resources/js/jquery.min.js"></script>
-	<script src="src/main/resources/js/bootstrap.min.js"></script>
-	<script src="src/main/resources/js/jquery.easing.js"></script>
-	<script src="src/main/resources/js/jquery.scrollUp.min.js"></script>
-	<script src="src/main/resources/js/smooth-scroll.min.js"></script>
-	<script src="src/main/resources/js/jquery.magnific-popup.min.js"></script>
-	<script src="src/main/resources/js/jquery.sliderPro.min.js"></script>
-	<script src="src/main/resources/js/owl.carousel.min.js"></script>
-	<script src="src/main/resources/js/jquery.easypiechart.js"></script>
-	<script src="src/main/resources/js/jquery.countTo.js"></script>
-	<script src="src/main/resources/js/isotope.pkgd.min.js"></script>
-	<script src="src/main/resources/js/jquery.stellar.min.js"></script>
-	<script src="src/main/resources/js/jquery.waypoints.min.js"></script>
-	<script src="src/main/resources/js/wow.min.js"></script>
-	<script src="src/main/resources/js/jquery.nav.js"></script>
-	<script src="src/main/resources/js/custom.js"></script>
+	<script src="${js }modernizr.min.js"></script>
+	<script src="${js }jquery.min.js"></script>
+	<script src="${js }bootstrap.min.js"></script>
+	<script src="${js }jquery.easing.js"></script>
+	<script src="${js }jquery.scrollUp.min.js"></script>
+	<script src="${js }smooth-scroll.min.js"></script>
+	<script src="${js }jquery.magnific-popup.min.js"></script>
+	<script src="${js }jquery.sliderPro.min.js"></script>
+	<script src="${js }owl.carousel.min.js"></script>
+	<script src="${js }jquery.easypiechart.js"></script>
+	<script src="${js }jquery.countTo.js"></script>
+	<script src="${js }isotope.pkgd.min.js"></script>
+	<script src="${js }jquery.stellar.min.js"></script>
+	<script src="${js }jquery.waypoints.min.js"></script>
+	<script src="${js }wow.min.js"></script>
+	<script src="${js }jquery.nav.js"></script>
+	<script src="${js }custom.js"></script>
 </body>
 </html>

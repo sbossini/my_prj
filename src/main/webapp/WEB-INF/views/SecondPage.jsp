@@ -7,7 +7,7 @@
 <title>Second Page</title>
 </head>
 <body>
-	<h4>Hello from second page! ${msg }</h4>
+	<h4>Hello from second page! Now you can see --> ${msg }</h4>
 	<a href="FirstPage.html">goBack!</a>
 </body>
 </html>

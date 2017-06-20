@@ -1,1 +1,0 @@
-Read more about licensing here: http://www.binarytheme.com/terms-and-conditions/
