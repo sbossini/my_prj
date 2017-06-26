@@ -2,5 +2,5 @@ projectKey=com.simple_proof:proof
 serverUrl=http://localhost:9000
 serverVersion=6.4.0.25310
 dashboardUrl=http://localhost:9000/dashboard/index/com.simple_proof:proof
-ceTaskId=AVzBDHVUAMENbsJ3UcZt
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVzBDHVUAMENbsJ3UcZt
+ceTaskId=AVzO_ujOZN62KxNEQ_vo
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVzO_ujOZN62KxNEQ_vo

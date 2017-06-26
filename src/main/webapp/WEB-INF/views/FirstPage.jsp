@@ -10,11 +10,11 @@
 	content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- PAGE TITLE -->
-<title>CLEAN - SLIDER RESPONSIVE HTML TEMPLATE</title>
+<title>Nice site</title>
 
-<spring:url value ="/resources/theme1/css/" var="css" />
-<spring:url value="/resources/theme1/js/" var="js" />
-<spring:url value="/resources/theme1/images/" var="img" />
+<spring:url value ="resources/theme1/css/" var="css" />
+<spring:url value="resources/theme1/js/" var="js" />
+<spring:url value="resources/theme1/images/" var="img" />
 <!-- ===================================
         FAVICON ICON
     ==================================== -->
@@ -34,10 +34,10 @@
         GOOGLE FONTS
     ==================================== -->
 <link href=<c:url value='http://fonts.googleapis.com/css?family=Montserrat:400,700' />
-	rel='stylesheet' type='text/css'>
+	rel="stylesheet" type='text/css'>
 <link
 	href=<c:url value='http://fonts.googleapis.com/css?family=Raleway:600,700,400,300' />
-	rel='stylesheet' type='text/css'>
+	rel="stylesheet" type='text/css'>
 
 <!-- ===================================
         FONTS ICON
@@ -47,12 +47,12 @@
 <!-- ===================================
         PLUGIN
     ==================================== -->
-<link rel="stylesheet" href="${css }magnific-popup.css">
-<link rel="stylesheet" href="${css }slider-pro.css">
-<link rel="stylesheet" href="${css }owl.carousel.css">
-<link rel="stylesheet" href="${css }owl.theme.css">
-<link rel="stylesheet" href="${css }owl.transitions.css">
-<link rel="stylesheet" href="${css }animate.css">
+<link rel="stylesheet" href="${css }magnific-popup.css" type='text/css'>
+<link rel="stylesheet" href="${css }slider-pro.css" type='text/css'>
+<link rel="stylesheet" href="${css }owl.carousel.css" type='text/css'>
+<link rel="stylesheet" href="${css }owl.theme.css" type='text/css'>
+<link rel="stylesheet" href="${css }owl.transitions.css" type='text/css'>
+<link rel="stylesheet" href="${css }animate.css" type='text/css'>
 
 <!-- ===================================
         MAIN STYLESHEET
@@ -294,7 +294,7 @@
 
 				<div
 					class="col-md-6 col-sm-6 col-xs-12 clean-custom-sec-img wow bounceInLeft">
-					<img src="${img }custom.jpg" alt="Custom Image">
+					<img src="${img }slider/1.jpg" alt="Custom Image">
 				</div>
 
 				<div
@@ -424,11 +424,11 @@
 						<!-- Work 5 -->
 						<div class="clean-portfolio-work-item">
 
-							<img src="images/featured-work/5.png" alt="Feature Work 5">
+							<img src="${img }featured-work/5.png" alt="Feature Work 5">
 							<div class="clean-port-work-details">
 								<ul class="clean-work-meta">
 									<li class="clean-lighbox"><a
-										href="images/featured-work/5.png"
+										href="${img }featured-work/5.png"
 										class="clean-featured-work-img"><i class="fa fa-cog"></i></a></li>
 								</ul>
 							</div>
